@@ -4,7 +4,7 @@ import { getCriticalRules, extractCriticalRules, getCriticalStyles, getUsedStyle
 import { alterProjectStyles } from './operations';
 import { createCriticalStyleStream } from './reporters/critical';
 import { createStyleStream } from './reporters/used';
-import { discoverProjectStyles, loadStyleDefinitions, parseProjectStyles } from './scanForStyles';
+import { loadStyleDefinitions, parseProjectStyles } from './scanForStylesWorker';
 
 import { createUsedFilter as createUsedSelectorsFilter } from './utils/cache';
 
@@ -13,7 +13,6 @@ export { UsedTypes, StyleDefinition, SelectionFilter } from './types';
 export {
   createUsedSelectorsFilter,
   loadStyleDefinitions,
-  discoverProjectStyles,
   parseProjectStyles,
   alterProjectStyles,
   getUsedStyles,

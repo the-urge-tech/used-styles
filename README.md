@@ -64,7 +64,7 @@ expensive operation) would be around **4ms**.
 
 Use it to scan your `dist`/`build` folder to create a look up table between classNames and files they are described in.
 
-1. `discoverProjectStyles(buildDirrectory, [filter]): StyleDef` - generates class lookup table
+1. (Deprecated) `discoverProjectStyles(buildDirrectory, [filter]): StyleDef` - generates class lookup table
    > you may use the second argument to control which files should be scanned
 
 `filter` is very important function here. It takes `fileName` as input, and returns

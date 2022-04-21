@@ -8,12 +8,12 @@ import {
   createCriticalStyleStream,
   createLink,
   createStyleStream,
-  discoverProjectStyles,
   enableReactOptimization,
   getCriticalStyles,
   getUsedStyles,
   parseProjectStyles,
 } from '../src';
+import { discoverProjectStyles } from '../src/scanForStyles';
 import { StyleDefinition } from '../src/types';
 
 describe('File based css stream', () => {
